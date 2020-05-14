@@ -1,0 +1,33 @@
+<h2>Components in Angular - App2Component</h2>
+    <hr>
+    <table>
+      <tr>
+        <th>EmployeeId</th>
+        <th>EmployeeName</th>
+        <th>EmployeeDesignation</th>
+        <th>DateOfJoining</th>
+        <th>EmployeeAddress</th>
+        <th>EmployeePhone</th>
+        <th>EmployeeAge</th>
+        <th>Salary</th>
+        <th>City</th>
+        <th>CompanyName</th>
+      </tr>
+
+
+      <tr *ngFor = 'let employee of employeeList'>
+        <td>{{employee.EmployeeId}} </td>
+        <td>{{employee.EmployeeName}}</td>
+        <td>{{employee.EmployeeDesignation}}</td>
+        <td>{{employee.DateOfJoining}}</td>
+        <td>{{employee.EmployeeAddress}}</td>
+        <td>{{employee.EmployeePhone}}</td>
+        <td>{{employee.EmployeeAge}}</td>
+        <td>{{employee.Salary | currency: 'USD': true}}</td>
+        <td>{{employee.City}}</td>
+        <td>{{employee.CompanyName}}</td>
+      </tr>
+    </table>
+    <app-app3></app-app3>
+    <div class='app-app3'></div>
+<div app-app3></div>
